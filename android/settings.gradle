@@ -1,0 +1,3 @@
+rootProject.name = 'LAGS_Assessments'
+
+include ':app'
