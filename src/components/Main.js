@@ -1,22 +1,24 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { View } from 'react-native';
+import { connect } from 'react-redux';
 import MainReady from './MainReady';
+import { getAssessments } from '../actions';
 import { Button, Card, CardSection, Input, Spinner } from './common';
 
 class Main extends Component {
 	state = { patientName: '', dateOfBirth: '', page: '', loading: false };
 
 	componentWillMount() {
-		axios.get('http://localhost:3000/api/v1/lagz_forms/assessments/check')
-			.then(response => {
-				console.log('response is here: ', response.data.message);
-				if (response.data.message === 'Params, no content') {
-					this.setState({ page: '' });
-				} else if (response.data.message !== 'Params, no content') {
-					this.setState({ page: 'PatientReady' });
-				}
-			});
+		// this.props.getAssessments().then(response => response.json()).then(json => console.log(json));
+		// .then(response => {
+		// 		console.log('response is here: ', response.data.message);
+		// 		if (response.data.message === 'Params, no content') {
+		// 			this.setState({ page: '' });
+		// 		} else if (response.data.message !== 'Params, no content') {
+		// 			this.setState({ page: 'PatientReady' });
+		// 		}
+		// });
 	}
 
 
@@ -29,6 +31,7 @@ class Main extends Component {
 			Name: patientName,
 			dateOB: dateOfBirth
 		};
+
 
 		axios.post('http://localhost:3000/api/v1/lagz_forms/assessments/reciever', items)
 			.then(this.patientReady())
@@ -44,7 +47,7 @@ class Main extends Component {
 		switch (this.state.page) {
 			case 'PatientReady':
 				return (
-					<MainReady />
+					<MainReady patient={this.state.patientName} />
 				);
 			default:
 				return (
@@ -101,4 +104,10 @@ class Main extends Component {
 	}
 }
 
-export default Main;
+const mapStateToProps = state => {
+	const { getAssessments } = state;
+
+	return { getAssessments };
+};
+
+export default connect(mapStateToProps, { getAssessments })(Main);
