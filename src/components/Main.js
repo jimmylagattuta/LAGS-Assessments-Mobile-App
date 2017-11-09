@@ -10,7 +10,9 @@ class Main extends Component {
 	state = { patientName: '', dateOfBirth: '', page: '', loading: false };
 
 	componentWillMount() {
-		// this.props.getAssessments().then(response => response.json()).then(json => console.log(json));
+		console.log('state.page here ', this.state.page);
+		// this.props.getAssessments()
+			// .then(response => response.json()).then(json => console.log(json));
 		// .then(response => {
 		// 		console.log('response is here: ', response.data.message);
 		// 		if (response.data.message === 'Params, no content') {
@@ -34,27 +36,34 @@ class Main extends Component {
 
 
 		axios.post('http://localhost:3000/api/v1/lagz_forms/assessments/reciever', items)
-			.then(this.patientReady())
+			.then(() => {
+				console.log('Before this.patientReady');
+				this.patientReady();
+			})
 			.catch(() => console.log('error'));
 	}
 
 	patientReady() {
+		console.log('state.page here before', this.state.page);
 		this.setState({ loading: false,
 						page: 'PatientReady' });
+		console.log('state.page here after', this.state.page);
 	}
 
 	renderContent() {
 		switch (this.state.page) {
 			case 'PatientReady':
 				return (
-					<MainReady patient={this.state.patientName} />
+					<View>
+						<MainReady patient={this.state.patientName} />
+					</View>
 				);
 			default:
-				return (
+				return ( 
 					<Card>
 						<CardSection>
 							<Input
-								placeholder="Jane Smith"
+								placeholder="Jane West"
 								label="Patient Name"
 								value={this.state.patientName}
 								onChangeText={text => this.setState({ patientName: text })}
