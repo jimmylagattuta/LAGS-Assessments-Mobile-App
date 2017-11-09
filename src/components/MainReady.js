@@ -44,7 +44,13 @@ class MainReady extends Component {
 
 		return (
 			this.state.assessments.map(assessment => 
-				<CardSection key={assessment.title}>
+				<CardSection 
+					centerStyle={{
+						alignItems: 'center',
+						justifyContent: 'center'
+					}}
+					key={assessment.title}
+				>
 					<Button onPress={() => this.onButtonPress(assessment.title)}>
 						{assessment.title}
 					</Button>
@@ -56,7 +62,7 @@ class MainReady extends Component {
 
 	renderContent() {
 		switch (this.state.assessment) {
-			case 'Quality Of Life':
+			case 'Quality Of Life Assessment':
 				return (
 					<View>
 						<QualityOfLife assessment={this.state.assessment} object={this.state.object} />
