@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import { Button, Card, CardSection, Input, Spinner } from '../common';
 import { FlatList, Text } from 'react-native';
-import { Card } from '../common';
+import { Card, Input } from '../common';
 
 class QualityOfLife extends Component {
 	state = { questions: [] };
@@ -40,7 +40,9 @@ class QualityOfLife extends Component {
 			<FlatList 
 				data={newList.content}
 				keyExtractor={(x, i) => i}
-				renderItem={({ item }) => <Text>{item.question}</Text>}
+				// renderItem={({ item, index }) => 
+					// console.log('index and item.question ', index, item.question)}
+				renderItem={({ item, index }) => <Text>{item.question} id:{index}</Text>}
 					// console.log('flatlist item ', item.question);
 			/>
 		);
