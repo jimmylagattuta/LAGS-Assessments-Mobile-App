@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import { Button, Card, CardSection, Input, Spinner } from '../common';
-import { FlatList, View, Text } from 'react-native';
+import { FlatList, View, Text, TextInput } from 'react-native';
 import { Card } from '../common';
 
 class AssessmentThree extends Component {
