@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import { Card, CardSection, Header, Button } from './common';
 import { getAssessments } from '../actions';
 import QualityOfLife from './tests/QualityOfLife';
@@ -43,18 +43,14 @@ class MainReady extends Component {
 		console.log('the assessments should be here : ', this.state.assessments);
 
 		return (
-			this.state.assessments.map(assessment => 
-				<CardSection 
-					centerStyle={{
-						alignItems: 'center',
-						justifyContent: 'center'
-					}}
-					key={assessment.title}
-				>
-					<Button onPress={() => this.onButtonPress(assessment.title)}>
-						{assessment.title}
-					</Button>
-				</CardSection>
+			this.state.assessments.map(assessment =>
+				<Card key={assessment.title}>
+					<CardSection>
+						<Button onPress={() => this.onButtonPress(assessment.title)}>
+							{assessment.title}
+						</Button>
+					</CardSection>
+				</Card>
 			)
 		);
 	}
@@ -74,7 +70,7 @@ class MainReady extends Component {
 						<TempAssessment assessment={this.state.assessment} object={this.state.object} />
 					</View>
 				);
-			case 'Assessmen Three':
+			case 'Assessment Three':
 				return (
 					<View>
 						<AssessmentThree assessment={this.state.assessment} object={this.state.object} />
@@ -83,11 +79,8 @@ class MainReady extends Component {
 			default:
 				return (
 					<View>
-						<View>
-							{this.renderAssessments()}
-						</View>
+						{this.renderAssessments()}
 					</View>
-
 				);
 		}
 	}
@@ -96,23 +89,10 @@ class MainReady extends Component {
 		return (
 			<View>
 				<Header headerText={this.state.headerTextPlaceholder} />
-				<Card>
-					<CardSection>
-						{this.renderContent()}
-					</CardSection>
-				</Card>
+				{this.renderContent()}
 			</View>
 		);
 	}
 }
-
-// const styles = {
-// 	centerStyle: {
-// 		justifyContent: 'center',
-// 		alignItems: 'center',
-// 		marginRight: 10,
-// 		marginLeft: 10 
-// 	}
-// };
 
 export default connect(null, { getAssessments })(MainReady);

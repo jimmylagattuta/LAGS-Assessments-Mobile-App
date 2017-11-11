@@ -54,9 +54,7 @@ class Main extends Component {
 		switch (this.state.page) {
 			case 'PatientReady':
 				return (
-					<View>
-						<MainReady patient={this.state.patientName} />
-					</View>
+					<MainReady patient={this.state.patientName} />
 				);
 			default:
 				return ( 
