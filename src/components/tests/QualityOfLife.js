@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 // import { Button, Card, CardSection, Input, Spinner } from '../common';
-import { FlatList, Text } from 'react-native';
-import { Card, Input } from '../common';
+import { FlatList, View, Text, TextInput } from 'react-native';
+// import { Card, Input } from '../common';
 
 class QualityOfLife extends Component {
-	state = { questions: [] };
+	state = { 
+		questions: [],
+		text: ''
+	};
 
 	componentWillMount() {
 		console.log('componentWillMount!!! heres the props: ', this.props);
@@ -42,7 +45,19 @@ class QualityOfLife extends Component {
 				keyExtractor={(x, i) => i}
 				// renderItem={({ item, index }) => 
 					// console.log('index and item.question ', index, item.question)}
-				renderItem={({ item, index }) => <Text>{item.question} id:{index}</Text>}
+				renderItem={({ item, index }) => 
+					<View style={{ padding: 10 }}>
+						<Text style={{ padding: 10, fontSize: 22 }}>
+							{index}) {item.question}
+						</Text>
+						<TextInput
+							style={{ height: 20 }}
+							placeholder="your response"
+							onChangeText={(text) => this.setState({ text })}
+						/>
+					</View>
+				}
+				// <Text>{item.question} id:{index}</Text>}
 					// console.log('flatlist item ', item.question);
 			/>
 		);
