@@ -50,7 +50,21 @@ class AssessmentThree extends Component {
 			<FlatList 
 				data={newList.content}
 				keyExtractor={(x, i) => i}
-				renderItem={({ item }) => <Text>{item.question}</Text>}
+				// renderItem={({ item, index }) => 
+					// console.log('index and item.question ', index, item.question)}
+				renderItem={({ item, index }) => 
+					<View style={{ padding: 10 }}>
+						<Text style={{ padding: 10, fontSize: 22 }}>
+							{index}) {item.question}
+						</Text>
+						<TextInput
+							style={{ height: 20 }}
+							placeholder="your response"
+							onChangeText={(text) => this.setState({ text })}
+						/>
+					</View>
+				}
+				// <Text>{item.question} id:{index}</Text>}
 					// console.log('flatlist item ', item.question);
 			/>
 		);
