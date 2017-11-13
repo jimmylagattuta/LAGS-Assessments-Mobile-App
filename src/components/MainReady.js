@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { View, Text } from 'react-native';
+import { View, Text, ScrollView } from 'react-native';
 import { Card, CardSection, Header, Button } from './common';
-import { getAssessments } from '../actions';
+import { getAssessments, sendAnswers } from '../actions';
 import QualityOfLife from './tests/QualityOfLife';
 import TempAssessment from './tests/TempAssessment';
 import AssessmentThree from './tests/AssessmentThree';
@@ -13,25 +13,26 @@ class MainReady extends Component {
 			}
 
 	componentWillMount() {
-		console.log('@__@ assessment: ', this.state.assessment);
-		console.log('props ', this.props);
+		// console.log('@__@ assessment: ', this.state.assessment);
+		// console.log('props ', this.props);
+		console.log('this.props main ready ', this.props);
 		this.triggerGetAssessments();
 	}
 
 	onButtonPress(title) {
-		console.log('title onButtonPress ', title);
+		// console.log('title onButtonPress ', title);
 		let toStateAsObject = [];
 		this.state.assessments.forEach((item) => {
 			if (item.title === title) {
 				toStateAsObject = item;
 			}
 		});
-		console.log('TO SEND TO CHILD ASSESSMENT COMPONENT toStateAsObject ', toStateAsObject);
+		// console.log('TO SEND TO CHILD ASSESSMENT COMPONENT toStateAsObject ', toStateAsObject);
 
 		this.setState({ assessment: title,
 						object: toStateAsObject,
 						headerTextPlaceholder: title });
-		console.log('@__@ assessment: ', this.state.assessment);
+		// console.log('@__@ assessment: ', this.state.assessment);
 	}
 
 	triggerGetAssessments() {
@@ -40,7 +41,8 @@ class MainReady extends Component {
 	}
 
 	renderAssessments() {
-		console.log('the assessments should be here : ', this.state.assessments);
+		// console.log('the assessments should be here : ', this.state.assessments);
+		console.log('sendAnswers ', this.props.sendAnswers);
 
 		return (
 			this.state.assessments.map(assessment =>
@@ -57,29 +59,54 @@ class MainReady extends Component {
 
 
 	renderContent() {
+		const { patient } = this.props;
+		console.log('STATE', this.state);
+		console.log('PROPS', this.props);
+		console.log('patient here! ', patient);
+		console.log('sendAnswers ', this.props.sendAnswers);
 		switch (this.state.assessment) {
 			case 'Quality Of Life Assessment':
 				return (
 					<View>
-						<QualityOfLife assessment={this.state.assessment} object={this.state.object} />
+						<QualityOfLife
+							assessment={this.state.assessment}
+							object={this.state.object}
+							patient={patient}
+							sendAnswers={this.props.sendAnswers}
+							setPage={this.props.setPage}
+						/>
 					</View>
 				);
 			case 'Temp Assessment':
 				return (
 					<View>
-						<TempAssessment assessment={this.state.assessment} object={this.state.object} />
+						<TempAssessment
+							assessment={this.state.assessment}
+							object={this.state.object}
+							patient={patient}
+							sendAnswers={this.props.sendAnswers}
+							setPage={this.props.setPage}
+						/>
 					</View>
 				);
 			case 'Assessment Three':
 				return (
 					<View>
-						<AssessmentThree assessment={this.state.assessment} object={this.state.object} />
+						<AssessmentThree
+							assessment={this.state.assessment}
+							object={this.state.object}
+							patient={patient}
+							sendAnswers={this.props.sendAnswers}
+							setPage={this.props.setPage}
+						/>
 					</View>
 				);
 			default:
 				return (
 					<View>
-						{this.renderAssessments()}
+						<ScrollView>
+							{this.renderAssessments()}
+						</ScrollView>
 					</View>
 				);
 		}
@@ -95,4 +122,9 @@ class MainReady extends Component {
 	}
 }
 
-export default connect(null, { getAssessments })(MainReady);
+const mapStateToProps = state => {
+	const { getAssessments, sendAnswers } = state;
+	return { getAssessments, sendAnswers };
+};
+
+export default connect(mapStateToProps, { getAssessments, sendAnswers })(MainReady);
