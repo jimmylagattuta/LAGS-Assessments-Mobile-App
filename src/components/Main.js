@@ -3,14 +3,22 @@ import axios from 'axios';
 import { View } from 'react-native';
 import { connect } from 'react-redux';
 import MainReady from './MainReady';
-import { getAssessments } from '../actions';
+import { getAssessments, sendAnswers } from '../actions/types';
 import { Button, Card, CardSection, Input, Spinner } from './common';
 
 class Main extends Component {
-	state = { patientName: '', dateOfBirth: '', page: '', loading: false };
+	constructor(props) {
+		super(props);
+
+		this.state = { patientName: '', dateOfBirth: '', page: '', loading: false };
+		
+		this.handler = this.handler.bind(this);
+	}
 
 	componentWillMount() {
 		console.log('state.page here ', this.state.page);
+		console.log('this.props main ', this.props);
+
 		// this.props.getAssessments()
 			// .then(response => response.json()).then(json => console.log(json));
 		// .then(response => {
@@ -50,11 +58,21 @@ class Main extends Component {
 		console.log('state.page here after', this.state.page);
 	}
 
+	handler() {
+		this.setState({
+			page: ''
+		});
+	}
+
 	renderContent() {
 		switch (this.state.page) {
 			case 'PatientReady':
 				return (
-					<MainReady patient={this.state.patientName} />
+					<MainReady
+						patient={this.state.patientName}
+						sendAnswers={this.props.sendAnswers}
+						setPage={this.handler}
+					/>
 				);
 			default:
 				return ( 
@@ -112,9 +130,9 @@ class Main extends Component {
 }
 
 const mapStateToProps = state => {
-	const { getAssessments } = state;
+	const { getAssessments, sendAnswers } = state;
 
-	return { getAssessments };
+	return { getAssessments, sendAnswers };
 };
 
-export default connect(mapStateToProps, { getAssessments })(Main);
+export default connect(mapStateToProps, { getAssessments, sendAnswers })(Main);
