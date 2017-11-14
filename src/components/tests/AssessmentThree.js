@@ -147,7 +147,7 @@ class AssessmentThree extends Component {
 							console.log('pack', pack);
 							axios.post('http://localhost:3000/api/v1/lagz_forms/assessments/answers', pack)
 								.then((response) => {
-									console.log('response!', response);
+									console.log('response!', response.data);
 									if (response.data.data === 'Finished') {
 										console.log('Finished');
 										this.props.setPage;
