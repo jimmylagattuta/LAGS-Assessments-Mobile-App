@@ -89,6 +89,7 @@ class QualityOfLife extends Component {
 													});
 										if (this.state.compareQuestion && this.state.compareQuestion
 											!== item.question) {
+											// "https:lags-assessments-mobileapp-api.herokuapp.com/
 											axios.post('http://localhost:3000/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 											console.log('response ', response.data.data);
 											});
