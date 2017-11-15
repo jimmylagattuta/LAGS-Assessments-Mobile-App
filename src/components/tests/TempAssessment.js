@@ -152,6 +152,7 @@ class TempAssessment extends Component {
 								question: this.state.tempValue
 							};
 							console.log('pack', pack);
+							// "https:lags-assessments-mobileapp-api.herokuapp.com/
 							axios.post('http://localhost:3000/api/v1/lagz_forms/assessments/answers', pack)
 								.then((response) => {
 									console.log('response!', response.data);

@@ -42,7 +42,7 @@ class Main extends Component {
 			dateOB: dateOfBirth
 		};
 
-
+		// "https:lags-assessments-mobileapp-api.herokuapp.com/
 		axios.post('http://localhost:3000/api/v1/lagz_forms/assessments/reciever', items)
 			.then(() => {
 				console.log('Before this.patientReady');
