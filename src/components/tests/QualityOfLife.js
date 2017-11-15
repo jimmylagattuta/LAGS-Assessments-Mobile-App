@@ -51,7 +51,7 @@ class QualityOfLife extends Component {
 
 
 		return (
-			<View style={{ paddingBottom: 620 }}>
+			<View style={{ paddingBottom: 400 }}>
 				<ScrollView>
 					<FlatList 
 						data={newList.content}
