@@ -43,12 +43,12 @@ class Main extends Component {
 		};
 
 		// "https:lags-assessments-mobileapp-api.herokuapp.com/
-		axios.post('http://localhost:3000/api/v1/lagz_forms/assessments/reciever', items)
+		axios.post('https://lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/reciever', items)
 			.then(() => {
 				console.log('Before this.patientReady');
 				this.patientReady();
 			})
-			.catch(() => console.log('error'));
+			.catch((response) => console.log('error, ', response));
 	}
 
 	patientReady() {

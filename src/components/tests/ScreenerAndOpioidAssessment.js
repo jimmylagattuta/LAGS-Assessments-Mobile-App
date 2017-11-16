@@ -1,38 +1,70 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { FlatList, View, Text, TextInput, ScrollView } from 'react-native';
-import { Button } from '../common';
-// import { Card, Input } from '../common';
+// import { Button, Card, CardSection, Input, Spinner } from '../common';
+import { FlatList, Text, TextInput, View, ScrollView } from 'react-native';
+import { Card, Header, Button } from '../common';
 
-class QualityOfLife extends Component {
-	state = { 
-		questions: [],
-		index: 0,
-		id: 0,
-		textPlace: '',
-		textInState: '',
-		packageToPackage: [],
-		packageForApi: []
-	};
+class ScreenerAndOpioidAssessment extends Component {
+	state = {
+		toAPI: [],
+		questionObject: [],
+		arrayOfQ: [],
+		tempValue: [],
+		compareQuestion: ''
+	}
 
 	componentWillMount() {
-		// console.log('componentWillMount!!! heres the props: ', this.props);
-		// console.log('QualityOfLife componentWillMount with props object: ', this.props.object);
+		console.log('STATE', this.state);
+		console.log('PROPS', this.props);
+		// console.log('props temp assessment ', this.props);
+		// console.log('props temp assessment sendAnswers', this.props.sendAnswers);
+
+		if (this.state.questionObject) {
+			console.log('questionObject', this.state.questionObject);
+			if (this.state.arrayOfQ) {
+				const newQuestions = [];
+				newQuestions.push(this.state.questionObject[0]);
+				newQuestions.push(this.state.arrayOfQ[0]);
+				this.setState({ arrayOfQ: newQuestions[0],
+								questionObject: []
+							});
+				console.log('arrayOfQ 1', this.state.arrayOfQ);
+			} else {
+				const newQuestion = [];
+				newQuestion.push(this.state.questionObject[0]);
+				this.setState({ arrayOfQ: newQuestion[0],
+								questionObject: []
+							});
+				console.log('arrayOfQ 2', this.stata.arrayOfQ);
+			}
+
+			// this.props.sendAnswers(this.state.newQuestion);
+		}
+		// console.log('AssessmentThree componentWillMount with props: ', this.props);
+		// console.log('AssessmentThree componentWillMount with props object: ', this.props.object);
 		// console.log('props object questions: ', this.props.object.questions);
 		// console.log('state ', this.state.questions);
-		const list = [];
-		this.props.object.questions.forEach((question) => {
-			list.push(question);
-		});
+		// const list = [];
+		// this.props.object.questions.forEach((question) => {
+			// list.push(question);
+		// });
 		// this.setStateQuestions(this.props.object.questions);
 		// console.log('list ', list);
 		// const newList = {
-		// 	content: list
+			// content: list
 		// };
 		// console.log('new_list.content', newList.content);
-		console.log('STATE', this.state);
-		console.log('PROPS', this.props);
-		console.log('this.state.packageToPackage cwm', this.state.packageToPackage);
+		// this.setState({ questions: newList.content });
+	}
+
+	// sendTheContent(content) {
+	// 	if (content) {
+	// 		this.props.sendAnswers(content);
+	// 	}
+	// }
+
+	onButtonPress() {
+		this.setState({ compareQuestion: '' });
 	}
 
 	render() {
@@ -87,9 +119,7 @@ class QualityOfLife extends Component {
 										this.setState({ tempValue: newText,
 														compareQuestion: item.question 
 													});
-										if (this.state.compareQuestion && this.state.compareQuestion
-											!== item.question) {
-											// "https:lags-assessments-mobileapp-api.herokuapp.com/
+										if (this.state.compareQuestion && this.state.compareQuestion !== item.question) {
 											axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 											console.log('response ', response.data.data);
 											});
@@ -122,17 +152,18 @@ class QualityOfLife extends Component {
 								question: this.state.tempValue
 							};
 							console.log('pack', pack);
+							// "https:lags-assessments-mobileapp-api.herokuapp.com/
 							axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', pack)
 								.then((response) => {
 									console.log('response!', response.data);
 									if (response.data.data === 'Finished') {
+										console.log('Finished');
 										this.props.setPage;
-										console.log('Finished');							
 									}
 								});
 						}}
 					>
-						Done
+					Done
 					</Button>
 				</ScrollView>
 			</View>
@@ -140,4 +171,4 @@ class QualityOfLife extends Component {
 	}
 }
 
-export default QualityOfLife;
+export default ScreenerAndOpioidAssessment;

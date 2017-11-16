@@ -1,70 +1,24 @@
+
 import React, { Component } from 'react';
 import axios from 'axios';
-// import { Button, Card, CardSection, Input, Spinner } from '../common';
 import { FlatList, Text, TextInput, View, ScrollView } from 'react-native';
-import { Card, Header, Button } from '../common';
+import { Button, Card, CardSection, Input, Spinner } from '../common';
 
-class TempAssessment extends Component {
-	state = {
-		toAPI: [],
-		questionObject: [],
-		arrayOfQ: [],
-		tempValue: [],
-		compareQuestion: ''
-	}
+class BriefPainInventoryQuestionnaire extends Component {
+	state = { 
+		questions: [],
+		index: 0,
+		id: 0,
+		textInState: '',
+		packageToPackage: [],
+		packageForApi: [],
+		text: ''
+	};
 
 	componentWillMount() {
+		console.log('BriefPainInventoryQuestionnaire props object: ', this.props.object.questions);
 		console.log('STATE', this.state);
 		console.log('PROPS', this.props);
-		// console.log('props temp assessment ', this.props);
-		// console.log('props temp assessment sendAnswers', this.props.sendAnswers);
-
-		if (this.state.questionObject) {
-			console.log('questionObject', this.state.questionObject);
-			if (this.state.arrayOfQ) {
-				const newQuestions = [];
-				newQuestions.push(this.state.questionObject[0]);
-				newQuestions.push(this.state.arrayOfQ[0]);
-				this.setState({ arrayOfQ: newQuestions[0],
-								questionObject: []
-							});
-				console.log('arrayOfQ 1', this.state.arrayOfQ);
-			} else {
-				const newQuestion = [];
-				newQuestion.push(this.state.questionObject[0]);
-				this.setState({ arrayOfQ: newQuestion[0],
-								questionObject: []
-							});
-				console.log('arrayOfQ 2', this.stata.arrayOfQ);
-			}
-
-			// this.props.sendAnswers(this.state.newQuestion);
-		}
-		// console.log('AssessmentThree componentWillMount with props: ', this.props);
-		// console.log('AssessmentThree componentWillMount with props object: ', this.props.object);
-		// console.log('props object questions: ', this.props.object.questions);
-		// console.log('state ', this.state.questions);
-		// const list = [];
-		// this.props.object.questions.forEach((question) => {
-			// list.push(question);
-		// });
-		// this.setStateQuestions(this.props.object.questions);
-		// console.log('list ', list);
-		// const newList = {
-			// content: list
-		// };
-		// console.log('new_list.content', newList.content);
-		// this.setState({ questions: newList.content });
-	}
-
-	// sendTheContent(content) {
-	// 	if (content) {
-	// 		this.props.sendAnswers(content);
-	// 	}
-	// }
-
-	onButtonPress() {
-		this.setState({ compareQuestion: '' });
 	}
 
 	render() {
@@ -80,7 +34,6 @@ class TempAssessment extends Component {
 		};
 		// console.log('new_list.content', newList.content);
 		const packageJSON = [];
-
 
 		return (
 			<View style={{ paddingBottom: 400 }}>
@@ -119,8 +72,10 @@ class TempAssessment extends Component {
 										this.setState({ tempValue: newText,
 														compareQuestion: item.question 
 													});
-										if (this.state.compareQuestion && this.state.compareQuestion !== item.question) {
-											axios.post('http://localhost:3000/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+										if (this.state.compareQuestion && this.state.compareQuestion
+												!== item.question) {
+											// https:lags-assessments-mobileapp-api.herokuapp.com/
+											axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 											console.log('response ', response.data.data);
 											});
 										} 
@@ -142,7 +97,7 @@ class TempAssessment extends Component {
 							// console.log('flatlist item ', item.question);
 					/>
 					<Button
-						style={{ paddingTop: 50 }}
+						style={{ paddingTop: 20 }}
 						onPress={() => {
 							console.log('newText ', this.state.tempValue);
 							const pack = {
@@ -152,8 +107,7 @@ class TempAssessment extends Component {
 								question: this.state.tempValue
 							};
 							console.log('pack', pack);
-							// "https:lags-assessments-mobileapp-api.herokuapp.com/
-							axios.post('http://localhost:3000/api/v1/lagz_forms/assessments/answers', pack)
+							axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', pack)
 								.then((response) => {
 									console.log('response!', response.data);
 									if (response.data.data === 'Finished') {
@@ -163,7 +117,7 @@ class TempAssessment extends Component {
 								});
 						}}
 					>
-					Done
+						Done
 					</Button>
 				</ScrollView>
 			</View>
@@ -171,4 +125,6 @@ class TempAssessment extends Component {
 	}
 }
 
-export default TempAssessment;
+export default BriefPainInventoryQuestionnaire;
+
+	

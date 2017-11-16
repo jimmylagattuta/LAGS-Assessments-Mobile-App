@@ -1,38 +1,24 @@
+
 import React, { Component } from 'react';
 import axios from 'axios';
-import { FlatList, View, Text, TextInput, ScrollView } from 'react-native';
-import { Button } from '../common';
-// import { Card, Input } from '../common';
+import { FlatList, Text, TextInput, View, ScrollView } from 'react-native';
+import { Button, Card, CardSection, Input, Spinner } from '../common';
 
-class QualityOfLife extends Component {
+class PatientHealthQuestionnaire extends Component {
 	state = { 
 		questions: [],
 		index: 0,
 		id: 0,
-		textPlace: '',
 		textInState: '',
 		packageToPackage: [],
-		packageForApi: []
+		packageForApi: [],
+		text: ''
 	};
 
 	componentWillMount() {
-		// console.log('componentWillMount!!! heres the props: ', this.props);
-		// console.log('QualityOfLife componentWillMount with props object: ', this.props.object);
-		// console.log('props object questions: ', this.props.object.questions);
-		// console.log('state ', this.state.questions);
-		const list = [];
-		this.props.object.questions.forEach((question) => {
-			list.push(question);
-		});
-		// this.setStateQuestions(this.props.object.questions);
-		// console.log('list ', list);
-		// const newList = {
-		// 	content: list
-		// };
-		// console.log('new_list.content', newList.content);
+		console.log('PatientHealthQuestionnaire props object: ', this.props.object.questions);
 		console.log('STATE', this.state);
 		console.log('PROPS', this.props);
-		console.log('this.state.packageToPackage cwm', this.state.packageToPackage);
 	}
 
 	render() {
@@ -48,7 +34,6 @@ class QualityOfLife extends Component {
 		};
 		// console.log('new_list.content', newList.content);
 		const packageJSON = [];
-
 
 		return (
 			<View style={{ paddingBottom: 400 }}>
@@ -88,8 +73,8 @@ class QualityOfLife extends Component {
 														compareQuestion: item.question 
 													});
 										if (this.state.compareQuestion && this.state.compareQuestion
-											!== item.question) {
-											// "https:lags-assessments-mobileapp-api.herokuapp.com/
+												!== item.question) {
+											// https:lags-assessments-mobileapp-api.herokuapp.com/
 											axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 											console.log('response ', response.data.data);
 											});
@@ -112,7 +97,7 @@ class QualityOfLife extends Component {
 							// console.log('flatlist item ', item.question);
 					/>
 					<Button
-						style={{ paddingTop: 50 }}
+						style={{ paddingTop: 20 }}
 						onPress={() => {
 							console.log('newText ', this.state.tempValue);
 							const pack = {
@@ -126,8 +111,8 @@ class QualityOfLife extends Component {
 								.then((response) => {
 									console.log('response!', response.data);
 									if (response.data.data === 'Finished') {
+										console.log('Finished');
 										this.props.setPage;
-										console.log('Finished');							
 									}
 								});
 						}}
@@ -140,4 +125,39 @@ class QualityOfLife extends Component {
 	}
 }
 
-export default QualityOfLife;
+export default PatientHealthQuestionnaire;
+
+				// if (item.question.starts_with('If you checked off any problems')) {
+				// 	<Card key={item.id}>
+				// 		<CardSection>
+				// 			<form
+				// 				style={{ justifyContent: 'center', paddingLeft: 5, paddingRight: 5 }}
+				// 				placeholder='your response'
+				// 				label={item.question}
+				// 				value={this.state.text}
+				// 				onChangeText={(text) => this.setState({ text })}
+				// 			>
+				// 				<input type="checkbox" value="Not difficult at all" />Not difficult at all
+				// 				<input type="checkbox" value="Somewhat difficult" />Somewhat difficult
+				// 				<input type="checkbox" value="Very difficult" />Very difficult
+				// 				<input type="checkbox" value="Extremely difficult" />Extremely difficult
+				// 			</form>
+				// 		</CardSection>
+				// 	</Card>;
+				// } else {
+				// 	<Card key={item.id}>
+				// 		<CardSection>
+				// 			<form
+				// 				style={{ justifyContent: 'center', paddingLeft: 5, paddingRight: 5 }}
+				// 				label={item.question}
+				// 				value={this.state.text}
+				// 				onChangeText={(text) => this.setState({ text })}
+				// 			>
+				// 				<input type="checkbox" value="0" />0
+				// 				<input type="checkbox" value="1" />1
+				// 				<input type="checkbox" value="2" />2
+				// 				<input type="checkbox" value="3" />3
+				// 			</form>
+				// 		</CardSection>
+				// 	</Card>;
+				// )

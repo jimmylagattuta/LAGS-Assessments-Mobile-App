@@ -4,8 +4,11 @@ import { View, Text, ScrollView } from 'react-native';
 import { Card, CardSection, Header, Button } from './common';
 import { getAssessments, sendAnswers } from '../actions';
 import QualityOfLife from './tests/QualityOfLife';
-import TempAssessment from './tests/TempAssessment';
-import AssessmentThree from './tests/AssessmentThree';
+import ScreenerAndOpioidAssessment from './tests/ScreenerAndOpioidAssessment';
+import PatientHealthQuestionnaire from './tests/PatientHealthQuestionnaire';
+import SleepHealthQuestionnaire from './tests/SleepHealthQuestionnaire';
+import BriefPainInventoryQuestionnaire from './tests/BriefPainInventoryQuestionnaire';
+import CurrentOpioidMisuseMeasure from './tests/CurrentOpioidMisuseMeasure';
 // import AssessmentDetail from './detailedcomponents/AssessmentDetail';
 
 class MainReady extends Component {
@@ -77,10 +80,10 @@ class MainReady extends Component {
 						/>
 					</View>
 				);
-			case 'Temp Assessment':
+			case 'Screener and Opioid Assessment':
 				return (
 					<View>
-						<TempAssessment
+						<ScreenerAndOpioidAssessment
 							assessment={this.state.assessment}
 							object={this.state.object}
 							patient={patient}
@@ -89,10 +92,46 @@ class MainReady extends Component {
 						/>
 					</View>
 				);
-			case 'Assessment Three':
+			case 'Patient Health Questionnaire PHQ-9':
 				return (
 					<View>
-						<AssessmentThree
+						<PatientHealthQuestionnaire
+							assessment={this.state.assessment}
+							object={this.state.object}
+							patient={patient}
+							sendAnswers={this.props.sendAnswers}
+							setPage={this.props.setPage}
+						/>
+					</View>
+				);
+			case 'Sleep Health Questionnaire':
+				return (
+					<View>
+						<SleepHealthQuestionnaire
+							assessment={this.state.assessment}
+							object={this.state.object}
+							patient={patient}
+							sendAnswers={this.props.sendAnswers}
+							setPage={this.props.setPage}
+						/>
+					</View>
+				);
+			case 'Brief Pain Inventory Questionnaire':
+				return (
+					<View>
+						<BriefPainInventoryQuestionnaire
+							assessment={this.state.assessment}
+							object={this.state.object}
+							patient={patient}
+							sendAnswers={this.props.sendAnswers}
+							setPage={this.props.setPage}
+						/>
+					</View>
+				);
+			case 'Current Opioid Misuse Measure':
+				return (
+					<View>
+						<CurrentOpioidMisuseMeasure
 							assessment={this.state.assessment}
 							object={this.state.object}
 							patient={patient}
