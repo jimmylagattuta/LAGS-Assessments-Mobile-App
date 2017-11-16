@@ -1,10 +1,10 @@
+
 import React, { Component } from 'react';
 import axios from 'axios';
 import { FlatList, Text, TextInput, View, ScrollView } from 'react-native';
 import { Button, Card, CardSection, Input, Spinner } from '../common';
-// import { Card } from '../common';
 
-class AssessmentThree extends Component {
+class CurrentOpioidMisuseMeasure extends Component {
 	state = { 
 		questions: [],
 		index: 0,
@@ -16,47 +16,9 @@ class AssessmentThree extends Component {
 	};
 
 	componentWillMount() {
-		console.log('Assessment 3 props object: ', this.props.object.questions);
+		console.log('Current Opiod misuse measure props object: ', this.props.object.questions);
 		console.log('STATE', this.state);
 		console.log('PROPS', this.props);
-	}
-
-	renderQuestions() {
-		return (
-			this.props.object.questions.map((item) => {
-
-				if (this.state.text && this.state.packageForApi) {
-					const object = {
-						question: item.question,
-						answer: this.state.text
-					};
-					const array = [];
-					array.push(this.state.packageForApi[0]);
-					array.push(object);
-					this.setState({ packageForApi: array,
-									text: '' });
-				} else if (this.state.text) {
-					const object = {
-						question: item.question,
-						answer: this.state.text
-					};
-					this.setState({ packageForApi: object,
-									text: '' });
-				}
-				console.log('item ', item);
-				<Card key={item.id}>
-					<CardSection>
-						<Input
-							style={{ justifyContent: 'center', paddingLeft: 5, paddingRight: 5 }}
-							placeholder='your response'
-							label={item.question}
-							value={this.state.text}
-							onChangeText={(text) => this.setState({ text })}
-						/>
-					</CardSection>
-				</Card>;
-			})
-		);
 	}
 
 	render() {
@@ -72,7 +34,6 @@ class AssessmentThree extends Component {
 		};
 		// console.log('new_list.content', newList.content);
 		const packageJSON = [];
-
 
 		return (
 			<View style={{ paddingBottom: 400 }}>
@@ -113,8 +74,8 @@ class AssessmentThree extends Component {
 													});
 										if (this.state.compareQuestion && this.state.compareQuestion
 												!== item.question) {
-											// "https:lags-assessments-mobileapp-api.herokuapp.com/
-											axios.post('http://localhost:3000/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+											// https:lags-assessments-mobileapp-api.herokuapp.com/
+											axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 											console.log('response ', response.data.data);
 											});
 										} 
@@ -146,7 +107,7 @@ class AssessmentThree extends Component {
 								question: this.state.tempValue
 							};
 							console.log('pack', pack);
-							axios.post('http://localhost:3000/api/v1/lagz_forms/assessments/answers', pack)
+							axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', pack)
 								.then((response) => {
 									console.log('response!', response.data);
 									if (response.data.data === 'Finished') {
@@ -164,4 +125,4 @@ class AssessmentThree extends Component {
 	}
 }
 
-export default AssessmentThree;
+export default CurrentOpioidMisuseMeasure;
