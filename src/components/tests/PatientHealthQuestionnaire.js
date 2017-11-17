@@ -43,6 +43,22 @@ class PatientHealthQuestionnaire extends Component {
 		return (
 			<View style={{ paddingBottom: 400 }}>
 				<ScrollView>
+					<Text style={{ margin: 5, fontSize: 20 }}>Patient Health Questionnaire</Text>
+					<Text>Over the past two weeks, how often have you been bothered by any of the following problems?</Text>
+					<View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
+						<CheckBox
+							label='0 Not at all'
+						/>
+						<CheckBox
+							label='Several Days'
+						/>
+						<CheckBox
+							label='More than half the days'
+						/>
+						<CheckBox
+							label="Nearly every day"
+						/>
+					</View>
 					<FlatList 
 						data={newList.content}
 						keyExtractor={(x, i) => i}

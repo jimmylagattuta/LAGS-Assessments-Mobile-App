@@ -129,7 +129,7 @@ class MainReady extends Component {
 						/>
 					</View>
 				);
-			case 'COMM':
+			case 'COMM™':
 				return (
 					<View>
 						<CurrentOpioidMisuseMeasure
@@ -141,7 +141,7 @@ class MainReady extends Component {
 						/>
 					</View>
 				);
-			case 'DASS21':
+			case 'DASS-21':
 				return (
 					<View>
 						<DassTwentyOne

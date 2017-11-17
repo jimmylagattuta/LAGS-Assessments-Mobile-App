@@ -394,7 +394,504 @@ class QuestionTypeDetail extends Component {
 							</View>
 					</View>
 				);
-			// yesNo default
+			case 'noPainWorstPain0-10':
+				return (
+					<View style={{ padding: 10 }}>
+						<Text style={{ padding: 10, fontSize: 22 }}>
+							{this.props.index + 1}) {this.props.item.question}
+						</Text>
+							<View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
+								<View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='0'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='1'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='2'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='3'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='4'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='5'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+								</View>
+								<View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='6'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='7'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='8'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='9'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='10'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+								</View>
+							</View>
+					</View>
+				);
+			case 'noReliefCompleteRelief0-100%':
+				return (
+					<View style={{ padding: 10 }}>
+						<Text style={{ padding: 10, fontSize: 22 }}>
+							{this.props.index + 1}) {this.props.item.question}
+						</Text>
+							<View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
+								<View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='0'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='1'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='2'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='3'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='4'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='5'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+								</View>
+								<View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='6'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='7'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='8'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='9'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='10'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+								</View>
+							</View>
+					</View>
+				);
+			case 'doesNotInterfereCompletelyInteferes':
+				return (
+					<View style={{ padding: 10 }}>
+						<Text style={{ padding: 10, fontSize: 22 }}>
+							{this.props.index + 1}) {this.props.item.question}
+						</Text>
+							<View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
+								<View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='0'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='1'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='2'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='3'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='4'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='5'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+								</View>
+								<View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='6'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='7'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='8'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='9'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+									<CheckBox
+										style={{ height: 4, width: 4 }}
+										name={this.props.item.question}
+										label='10'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+										}}
+									/>
+								</View>
+							</View>
+					</View>
+				);
+			case 'animatedPerson':
+				return (
+					<View style={{ padding: 10 }}>
+						<Text>Interactive Person under research...</Text>
+					</View>
+				);
+			case 'neverToVeryOften1-5':
+				return (
+					<View style={{ padding: 10 }}>
+						<Text style={{ padding: 10, fontSize: 22 }}>
+							{this.props.index + 1}) {this.props.item.question}
+						</Text>
+							<View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
+								<CheckBox
+									style={{ height: 4, width: 4 }}
+									name={this.props.item.question}
+									label='Never'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+								<CheckBox
+									style={{ height: 4, width: 4 }}
+									name={this.props.item.question}
+									label='Seldom'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+								<CheckBox
+									style={{ height: 4, width: 4 }}
+									name={this.props.item.question}
+									label='Sometimes'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+								<CheckBox
+									style={{ height: 4, width: 4 }}
+									name={this.props.item.question}
+									label='Often'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+								<CheckBox
+									style={{ height: 4, width: 4 }}
+									name={this.props.item.question}
+									label='Very Often'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+							</View>
+					</View>
+				);
+			case 'a':
+				return (
+					<View style={{ padding: 10 }}>
+						<Text style={{ padding: 10, fontSize: 22 }}>
+							{this.props.index + 1}) {this.props.item.question}
+						</Text>
+							<View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
+								<CheckBox
+									style={{ height: 3, width: 3, fontSize: 6 }}
+									name={this.props.item.question}
+									label='Did not apply to me at all'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+								<CheckBox
+									style={{ height: 3, width: 3, fontSize: 6 }}
+									name={this.props.item.question}
+									label='Applied to me to some
+										degree, or some of the time'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+								<CheckBox
+									style={{ height: 3, width: 3, fontSize: 6 }}
+									name={this.props.item.question}
+									label='Applied to me to a
+										considerable degree or a good part of time'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+								<CheckBox
+									style={{ height: 3, width: 3, fontSize: 6 }}
+									name={this.props.item.question}
+									label='Applied to me very much
+										or most of the time'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+							</View>
+					</View>
+				);
+			case 'd':
+				return (
+					<View style={{ padding: 10 }}>
+						<Text style={{ padding: 10, fontSize: 22 }}>
+							{this.props.index + 1}) {this.props.item.question}
+						</Text>
+							<View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
+								<CheckBox
+									style={{ height: 3, width: 3, fontSize: 6 }}
+									name={this.props.item.question}
+									label='Did not apply to me at all'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+								<CheckBox
+									style={{ height: 3, width: 3, fontSize: 6 }}
+									name={this.props.item.question}
+									label='Applied to me to some
+										degree, or some of the time'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+								<CheckBox
+									style={{ height: 3, width: 3, fontSize: 6 }}
+									name={this.props.item.question}
+									label='Applied to me to a
+										considerable degree or a good part of time'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+								<CheckBox
+									style={{ height: 3, width: 3, fontSize: 6 }}
+									name={this.props.item.question}
+									label='Applied to me very much
+										or most of the time'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+							</View>
+					</View>
+				);
+			case 's':
+				return (
+					<View style={{ padding: 10 }}>
+						<Text style={{ padding: 10, fontSize: 22 }}>
+							{this.props.index + 1}) {this.props.item.question}
+						</Text>
+							<View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
+								<CheckBox
+									style={{ height: 3, width: 3, fontSize: 6 }}
+									name={this.props.item.question}
+									label='Did not apply to me at all'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+								<CheckBox
+									style={{ height: 3, width: 3, fontSize: 6 }}
+									name={this.props.item.question}
+									label='Applied to me to some 
+										degree, or some of the time'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+								<CheckBox
+									style={{ height: 3, width: 3, fontSize: 6 }}
+									name={this.props.item.question}
+									label='Applied to me to a considerable
+										degree or a good part of time'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+								<CheckBox
+									style={{ height: 3, width: 3, fontSize: 6 }}
+									name={this.props.item.question}
+									label='Applied to me very much or 
+										most of the time'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+							</View>
+					</View>
+				);
+			// 'yesNo' default
 			default:
 				return (
 					<View style={{ padding: 10 }}>
