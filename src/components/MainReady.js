@@ -69,7 +69,7 @@ class MainReady extends Component {
 		console.log('patient here! ', patient);
 		console.log('sendAnswers ', this.props.sendAnswers);
 		switch (this.state.assessment) {
-			case 'Quality Of Life Assessment':
+			case 'QOL-DN':
 				return (
 					<View>
 						<QualityOfLife
@@ -81,7 +81,7 @@ class MainReady extends Component {
 						/>
 					</View>
 				);
-			case 'Screener and Opioid Assessment':
+			case 'SOAPP®-R':
 				return (
 					<View>
 						<ScreenerAndOpioidAssessment
@@ -93,7 +93,7 @@ class MainReady extends Component {
 						/>
 					</View>
 				);
-			case 'Patient Health Questionnaire PHQ-9':
+			case 'PHQ-9':
 				return (
 					<View>
 						<PatientHealthQuestionnaire
@@ -105,7 +105,7 @@ class MainReady extends Component {
 						/>
 					</View>
 				);
-			case 'Sleep Health Questionnaire':
+			case 'SHQ':
 				return (
 					<View>
 						<SleepHealthQuestionnaire
@@ -117,7 +117,7 @@ class MainReady extends Component {
 						/>
 					</View>
 				);
-			case 'Brief Pain Inventory Questionnaire':
+			case 'BPI':
 				return (
 					<View>
 						<BriefPainInventoryQuestionnaire
@@ -129,7 +129,7 @@ class MainReady extends Component {
 						/>
 					</View>
 				);
-			case 'Current Opioid Misuse Measure':
+			case 'COMM':
 				return (
 					<View>
 						<CurrentOpioidMisuseMeasure

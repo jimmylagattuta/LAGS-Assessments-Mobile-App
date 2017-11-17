@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import CheckBox from 'react-native-checkbox';
 import axios from 'axios';
 import { FlatList, Text, TextInput, View, ScrollView } from 'react-native';
 import { Button, Card, CardSection, Input, Spinner } from '../common';
@@ -12,7 +13,10 @@ class PatientHealthQuestionnaire extends Component {
 		textInState: '',
 		packageToPackage: [],
 		packageForApi: [],
-		text: ''
+		text: '',
+		checkedYes: false,
+		checkedNo: false,
+		name: ''
 	};
 
 	componentWillMount() {
@@ -48,49 +52,54 @@ class PatientHealthQuestionnaire extends Component {
 								<Text style={{ padding: 10, fontSize: 22 }}>
 									{index + 1}) {item.question}
 								</Text>
-								<TextInput
-									style={{ height: 20 }}
-									placeholder="your response"
-									onChangeText={(text) => {
-										console.log('props', this.props);
-										console.log('B) patient name: ', this.props.patient);
-										console.log('packageJSON 0', packageJSON);
-										this.setState({ text });
-										console.log('packageJSON 1', packageJSON);
-										console.log('text: ', text);
-										const q = item.question;
-										console.log('packageJSON 2', packageJSON);
-										console.log(this.state.toApi);
-										const newText = {
-											question: q,
-											answer: text, 
-											patient: this.props.patient,
-											assessment: this.props.assessment,
-											masterObject: this.state.toApi
-										};
-										console.log('packageJSON 3', packageJSON);
-										this.setState({ tempValue: newText,
-														compareQuestion: item.question 
-													});
-										if (this.state.compareQuestion && this.state.compareQuestion
-												!== item.question) {
-											// https:lags-assessments-mobileapp-api.herokuapp.com/
-											axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
-											console.log('response ', response.data.data);
-											});
-										} 
-										console.log('packageJSON 4', packageJSON);
-										console.log('tempValue ', this.state.tempValue);
-										packageJSON.push(newText);
-										console.log('packageJSON 5', packageJSON);
-
-											// this.sendTheContent(packageJSON).bind(this);
-											// this.props.sendAnswers(packageJSON)
-											// 	.then((response) => {
-											// 		console.log('response in component ', response);
-											// 	});
-									}} 
-								/>
+								<View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+									<CheckBox
+										name={item.question}
+										label='Yes'
+										onChange={(checked) => {
+											console.log('I am checked yes', checked);
+											console.log('I am checked yes initial state name', this.state.name);
+											if (this.state.checkedYes) {
+												this.setState({
+													checkedYes: false,
+													checkedNo: false,
+													name: null
+												});
+											} else {
+												this.setState({ 
+													checkedYes: true,
+													checkedNo: false,
+													name: item.question
+												});	
+											}
+											console.log('I am checked yes @_@', checked);
+											console.log('I am checked yes initial state name @_@', this.state.name);
+										}}
+									/>
+									<CheckBox
+										name={item.question}
+										label='No'
+										onChange={(checked) => {
+											console.log('I am checked no', checked);
+											console.log('I am checked no initial state name', this.state.name);
+											if (this.state.checkedNo) {
+												this.setState({
+													checkedNo: false,
+													checkedYes: false,
+													name: null
+												});
+											} else {
+												this.setState({
+													checkedNo: true,
+													checkedYes: false,
+													name: item.question
+												});
+											}
+											console.log('I am checked no @_@', checked);
+											console.log('I am checked no initial state name @_@', this.state.name);
+										}}
+									/>
+								</View>
 							</View>
 						}
 						// <Text>{item.question} id:{index}</Text>}
