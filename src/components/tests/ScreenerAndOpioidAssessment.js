@@ -84,7 +84,7 @@ class ScreenerAndOpioidAssessment extends Component {
 
 
 		return (
-			<View style={{ paddingBottom: 400 }}>
+			<View style={{ paddingBottom: 400, justifyContent: 'center' }}>
 				<ScrollView>
 					<Text style={{ margin: 5 }}>Screener and Opioid Assessment for Patients with Pain-Revised (SOAPP®-R)</Text>
 					<Text style={{ margin: 5 }}>
