@@ -9,6 +9,7 @@ import PatientHealthQuestionnaire from './tests/PatientHealthQuestionnaire';
 import SleepHealthQuestionnaire from './tests/SleepHealthQuestionnaire';
 import BriefPainInventoryQuestionnaire from './tests/BriefPainInventoryQuestionnaire';
 import CurrentOpioidMisuseMeasure from './tests/CurrentOpioidMisuseMeasure';
+import DassTwentyOne from './tests/DassTwentyOne';
 // import AssessmentDetail from './detailedcomponents/AssessmentDetail';
 
 class MainReady extends Component {
@@ -132,6 +133,18 @@ class MainReady extends Component {
 				return (
 					<View>
 						<CurrentOpioidMisuseMeasure
+							assessment={this.state.assessment}
+							object={this.state.object}
+							patient={patient}
+							sendAnswers={this.props.sendAnswers}
+							setPage={this.props.setPage}
+						/>
+					</View>
+				);
+			case 'DASS21':
+				return (
+					<View>
+						<DassTwentyOne
 							assessment={this.state.assessment}
 							object={this.state.object}
 							patient={patient}
