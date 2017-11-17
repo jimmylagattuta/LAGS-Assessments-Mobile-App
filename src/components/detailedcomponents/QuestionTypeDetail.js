@@ -352,6 +352,48 @@ class QuestionTypeDetail extends Component {
 						</View>
 					</View>
 				);
+			case 'NSMN':
+				return (
+					<View style={{ padding: 10 }}>
+						<Text style={{ padding: 10, fontSize: 22 }}>
+							{this.props.index + 1}) {this.props.item.question}
+						</Text>
+							<View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
+								<CheckBox
+									style={{ height: 4, width: 4 }}
+									name={this.props.item.question}
+									label='Not at all'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+								<CheckBox
+									style={{ height: 4, width: 4 }}
+									name={this.props.item.question}
+									label='Several Days'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+								<CheckBox
+									style={{ height: 4, width: 4 }}
+									name={this.props.item.question}
+									label='More than half the days'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+								<CheckBox
+									style={{ height: 4, width: 4 }}
+									name={this.props.item.question}
+									label='Nearly Every Day'
+									onChange={(checked) => {
+										console.log('I am checked yes', checked);
+									}}
+								/>
+							</View>
+					</View>
+				);
 			// yesNo default
 			default:
 				return (
