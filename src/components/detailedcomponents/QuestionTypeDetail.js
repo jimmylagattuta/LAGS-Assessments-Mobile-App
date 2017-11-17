@@ -299,6 +299,59 @@ class QuestionTypeDetail extends Component {
 							</View>
 					</View>
 				);
+			case 'checkboxgroup':
+				return (
+					<View style={{ padding: 10 }}>
+						<View style={{ padding: 10 }}>
+							<Text style={{ padding: 10, fontSize: 22 }}>
+								{this.props.index + 1}) {this.props.item.question}
+							</Text>
+							<TextInput
+								style={{ height: 20 }}
+								placeholder="your response"
+								onChangeText={(text) => {
+									console.log('props', this.props);
+									console.log('B) patient name: ', this.props.patient);
+									console.log('packageJSON 0', packageJSON);
+									this.setState({ text });
+									console.log('packageJSON 1', packageJSON);
+									console.log('text: ', text);
+									const q = this.props.item.question;
+									console.log('packageJSON 2', packageJSON);
+									console.log(this.state.toApi);
+									const newText = {
+										question: q,
+										answer: text, 
+										patient: this.props.patient,
+										assessment: this.props.assessment,
+										masterObject: this.state.toApi
+									};
+									console.log('packageJSON 3', packageJSON);
+									this.setState({ tempValue: newText,
+													compareQuestion: this.props.item.question 
+												});
+									if (this.state.compareQuestion && this.state.compareQuestion
+											!== this.props.item.question) {
+										// https:lags-assessments-mobileapp-api.herokuapp.com/
+										axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+										console.log('response ', response.data.data);
+										});
+									} 
+									console.log('packageJSON 4', packageJSON);
+									console.log('tempValue ', this.state.tempValue);
+									packageJSON.push(newText);
+									console.log('packageJSON 5', packageJSON);
+
+										// this.sendTheContent(packageJSON).bind(this);
+										// this.props.sendAnswers(packageJSON)
+										// 	.then((response) => {
+										// 		console.log('response in component ', response);
+										// 	});
+								}} 
+							/>
+						</View>
+					</View>
+				);
 			// yesNo default
 			default:
 				return (
@@ -312,22 +365,6 @@ class QuestionTypeDetail extends Component {
 									label='Yes'
 									onChange={(checked) => {
 										console.log('I am checked yes', checked);
-										console.log('I am checked yes initial state name', this.state.name);
-										if (this.state.checkedYes) {
-											this.setState({
-												checkedYes: false,
-												checkedNo: false,
-												name: null
-											});
-										} else {
-											this.setState({ 
-												checkedYes: true,
-												checkedNo: false,
-												name: this.props.item.question
-											});	
-										}
-										console.log('I am checked yes @_@', checked);
-										console.log('I am checked yes initial state name @_@', this.state.name);
 									}}
 								/>
 								<CheckBox
@@ -335,22 +372,22 @@ class QuestionTypeDetail extends Component {
 									label='No'
 									onChange={(checked) => {
 										console.log('I am checked no', checked);
-										console.log('I am checked no initial state name', this.state.name);
-										if (this.state.checkedNo) {
-											this.setState({
-												checkedNo: false,
-												checkedYes: false,
-												name: null
-											});
-										} else {
-											this.setState({
-												checkedNo: true,
-												checkedYes: false,
-												name: this.props.item.question
-											});
-										}
-										console.log('I am checked no @_@', checked);
-										console.log('I am checked no initial state name @_@', this.state.name);
+										// console.log('I am checked no initial state name', this.state.name);
+										// if (this.state.checkedNo) {
+										// 	this.setState({
+										// 		checkedNo: false,
+										// 		checkedYes: false,
+										// 		name: null
+										// 	});
+										// } else {
+										// 	this.setState({
+										// 		checkedNo: true,
+										// 		checkedYes: false,
+										// 		name: this.props.item.question
+										// 	});
+										// }
+										// console.log('I am checked no @_@', checked);
+										// console.log('I am checked no initial state name @_@', this.state.name);
 									}}
 								/>
 							</View>
