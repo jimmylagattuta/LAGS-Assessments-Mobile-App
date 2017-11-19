@@ -1,8 +1,10 @@
 
 import React, { Component } from 'react';
 import axios from 'axios';
+import CheckBox from 'react-native-checkbox';
 import { FlatList, Text, TextInput, View, ScrollView } from 'react-native';
 import { Button, Card, CardSection, Input, Spinner } from '../common';
+import QuestionTypeDetail from '../detailedcomponents/QuestionTypeDetail';
 
 class BriefPainInventoryQuestionnaire extends Component {
 	state = { 
@@ -38,60 +40,43 @@ class BriefPainInventoryQuestionnaire extends Component {
 		return (
 			<View style={{ paddingBottom: 400 }}>
 				<ScrollView>
+					<Text style={{ margin: 5, fontSize: 20 }}>Brief Pain Inventory </Text>
+					<View state={{ flexDirection: 'column', justifyContent: 'space-between' }}>
+						<Text>questions 3-7</Text>
+						<View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
+							<CheckBox
+								label='0 No Pain'
+							/>
+							<CheckBox
+								label='10 Pain as bad as you can imagine'
+							/>
+						</View>
+						<Text>question 8</Text>
+						<View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
+							<CheckBox
+								label='0 No Relief'
+							/>
+							<CheckBox
+								label='10 Complete Relief'
+							/>
+						</View>
+						<Text>questions 9A-G</Text>
+						<View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
+							<CheckBox
+								label='0 Does not interfere'
+							/>
+							<CheckBox
+								label='10 Completely interferes'
+							/>
+						</View>
+					</View>
 					<FlatList 
 						data={newList.content}
 						keyExtractor={(x, i) => i}
 						// renderItem={({ item, index }) => 
 							// console.log('index and item.question ', index, item.question)}
 						renderItem={({ item, index }) => 
-							<View style={{ padding: 10 }}>
-								<Text style={{ padding: 10, fontSize: 22 }}>
-									{index + 1}) {item.question}
-								</Text>
-								<TextInput
-									style={{ height: 20 }}
-									placeholder="your response"
-									onChangeText={(text) => {
-										console.log('props', this.props);
-										console.log('B) patient name: ', this.props.patient);
-										console.log('packageJSON 0', packageJSON);
-										this.setState({ text });
-										console.log('packageJSON 1', packageJSON);
-										console.log('text: ', text);
-										const q = item.question;
-										console.log('packageJSON 2', packageJSON);
-										console.log(this.state.toApi);
-										const newText = {
-											question: q,
-											answer: text, 
-											patient: this.props.patient,
-											assessment: this.props.assessment,
-											masterObject: this.state.toApi
-										};
-										console.log('packageJSON 3', packageJSON);
-										this.setState({ tempValue: newText,
-														compareQuestion: item.question 
-													});
-										if (this.state.compareQuestion && this.state.compareQuestion
-												!== item.question) {
-											// https:lags-assessments-mobileapp-api.herokuapp.com/
-											axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
-											console.log('response ', response.data.data);
-											});
-										} 
-										console.log('packageJSON 4', packageJSON);
-										console.log('tempValue ', this.state.tempValue);
-										packageJSON.push(newText);
-										console.log('packageJSON 5', packageJSON);
-
-											// this.sendTheContent(packageJSON).bind(this);
-											// this.props.sendAnswers(packageJSON)
-											// 	.then((response) => {
-											// 		console.log('response in component ', response);
-											// 	});
-									}} 
-								/>
-							</View>
+							<QuestionTypeDetail item={item} index={index} />
 						}
 						// <Text>{item.question} id:{index}</Text>}
 							// console.log('flatlist item ', item.question);
