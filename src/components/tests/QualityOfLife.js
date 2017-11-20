@@ -41,7 +41,7 @@ class QualityOfLife extends Component {
 		const packageJSON = [];
 		return (
 			<ScrollView>
-				<Text style={{ margin: 5, fontSize: 20 }}>Quality of Life Questionnaire</Text>
+				<Text style={{ margin: 5, marginLeft: 100, fontSize: 20, alignItems: 'center', justifyContent: 'center' }}>Quality of Life Questionnaire</Text>
 				<FlatList
 					data={newList.content}
 					keyExtractor={(x, i) => i}
