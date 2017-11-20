@@ -41,15 +41,27 @@ class SleepHealthQuestionnaire extends Component {
 				<ScrollView>
 					<Text style={{ margin: 5, fontSize: 20 }}>Sleep Health Questionnaire</Text>
 					<FlatList 
+
 						data={newList.content}
 						keyExtractor={(x, i) => i}
 						// renderItem={({ item, index }) => 
-							// console.log('index and item.question ', index, item.question)}
+						// console.log('index and item.question ', index, item.question)}
 						renderItem={({ item, index }) => 
-							<QuestionTypeDetail item={item} index={index} />
+							<View style={{ padding: 10 }}>
+								<Text style={{ padding: 10, fontSize: 22 }}>
+									{index}) {item.question}
+								</Text>
+								<TextInput
+									style={{ height: 20 }}
+									placeholder="your response"
+									onChangeText={(text) => {
+										this.setState({ text });
+										console.log('text');
+										console.log('item', index, item);
+									}}
+								/>		
+							</View>
 						}
-						// <Text>{item.question} id:{index}</Text>}
-							// console.log('flatlist item ', item.question);
 					/>
 					<Button
 						style={{ paddingTop: 20 }}

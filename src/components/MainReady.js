@@ -13,13 +13,22 @@ import DassTwentyOne from './tests/DassTwentyOne';
 // import AssessmentDetail from './detailedcomponents/AssessmentDetail';
 
 class MainReady extends Component {
-	state = { assessments: [], assessment: '', object: [], headerTextPlaceholder: 'Choose Assessment'
-			}
+	state = {
+		assessments: [],
+		assessment: '',
+		object: [],
+		headerTextPlaceholder: 'Choose Assessment',
+		email: '',
+		notes: [],
+		patient_object: []
+	}
 
 	componentWillMount() {
 		// console.log('@__@ assessment: ', this.state.assessment);
 		// console.log('props ', this.props);
 		console.log('this.props main ready ', this.props);
+		console.log('this.props ma', this.props);
+
 		this.triggerGetAssessments();
 	}
 
@@ -41,7 +50,10 @@ class MainReady extends Component {
 
 	triggerGetAssessments() {
 		this.props.getAssessments()
-			.then((response) => this.setState({ assessments: response.payload.data[0].content }));
+			.then((response) => {
+				console.log('response for email', response.payload.data[0].email);
+				this.setState({ assessments: response.payload.data[0].content, email: response.payload.data[0].email, patient_object: response.payload.data[0].patient });
+			});
 	}
 
 	renderAssessments() {
@@ -64,22 +76,30 @@ class MainReady extends Component {
 
 	renderContent() {
 		const { patient } = this.props;
+		const email = this.state.email;
+		const patient_object = this.state.patient_object;
 		console.log('STATE', this.state);
 		console.log('PROPS', this.props);
 		console.log('patient here! ', patient);
+		console.log('email here! ', email);
+		console.log('patient_object here! ', patient_object);
 		console.log('sendAnswers ', this.props.sendAnswers);
 		switch (this.state.assessment) {
 			case 'QOL-DN':
 				return (
-					<View>
-						<QualityOfLife
-							assessment={this.state.assessment}
-							object={this.state.object}
-							patient={patient}
-							sendAnswers={this.props.sendAnswers}
-							setPage={this.props.setPage}
-						/>
-					</View>
+					<ScrollView>
+						<View>
+							<QualityOfLife
+								assessment={this.state.assessment}
+								object={this.state.object}
+								patient={patient}
+								sendAnswers={this.props.sendAnswers}
+								setPage={this.props.setPage}
+								patient_object={patient_object}
+								email={email}
+							/>
+						</View>
+					</ScrollView>
 				);
 			case 'SOAPP®-R':
 				return (
@@ -90,6 +110,8 @@ class MainReady extends Component {
 							patient={patient}
 							sendAnswers={this.props.sendAnswers}
 							setPage={this.props.setPage}
+							patient_object={patient_object}
+							email={email}
 						/>
 					</View>
 				);
@@ -102,6 +124,8 @@ class MainReady extends Component {
 							patient={patient}
 							sendAnswers={this.props.sendAnswers}
 							setPage={this.props.setPage}
+							patient_object={patient_object}
+							email={email}
 						/>
 					</View>
 				);
@@ -114,6 +138,8 @@ class MainReady extends Component {
 							patient={patient}
 							sendAnswers={this.props.sendAnswers}
 							setPage={this.props.setPage}
+							patient_object={patient_object}
+							email={email}
 						/>
 					</View>
 				);
@@ -126,6 +152,8 @@ class MainReady extends Component {
 							patient={patient}
 							sendAnswers={this.props.sendAnswers}
 							setPage={this.props.setPage}
+							patient_object={patient_object}
+							email={email}
 						/>
 					</View>
 				);
@@ -138,6 +166,8 @@ class MainReady extends Component {
 							patient={patient}
 							sendAnswers={this.props.sendAnswers}
 							setPage={this.props.setPage}
+							patient_object={patient_object}
+							email={email}
 						/>
 					</View>
 				);
@@ -150,6 +180,8 @@ class MainReady extends Component {
 							patient={patient}
 							sendAnswers={this.props.sendAnswers}
 							setPage={this.props.setPage}
+							patient_object={patient_object}
+							email={email}
 						/>
 					</View>
 				);

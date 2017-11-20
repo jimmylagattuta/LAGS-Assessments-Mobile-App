@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import { connect } from 'react-redux';
 import MainReady from './MainReady';
 import { getAssessments, sendAnswers } from '../actions/types';
@@ -10,7 +10,14 @@ class Main extends Component {
 	constructor(props) {
 		super(props);
 
-		this.state = { patientName: '', dateOfBirth: '', page: '', loading: false };
+		this.state = {
+			patientName: '',
+			dateOfBirth: '',
+			page: '',
+			loading: false,
+			email: '',
+			date: ''
+		};
 		
 		this.handler = this.handler.bind(this);
 	}
@@ -33,13 +40,16 @@ class Main extends Component {
 
 
 	onButtonPress() {
-		const { patientName, dateOfBirth } = this.state;
+		const { patientName, dateOfBirth, date, email } = this.state;
 
 		this.setState({ loading: true });
 
 		const items = {
 			Name: patientName,
-			dateOB: dateOfBirth
+			dateOB: dateOfBirth,
+			date: date,
+			email: email
+
 		};
 
 		// "https:lags-assessments-mobileapp-api.herokuapp.com/
@@ -92,6 +102,28 @@ class Main extends Component {
 								label="DOB"
 								value={this.state.dateOfBirth}
 								onChangeText={text => this.setState({ dateOfBirth: text })}
+							/>
+						</CardSection>
+
+						<CardSection>
+							<Input
+								placeholder="dd/mm/yyyy"
+								label="Date"
+								value={this.state.date}
+								onChangeText={text => this.setState({ date: text })}
+							/>
+						</CardSection>
+
+						<CardSection>
+							<Text>Temporary</Text>
+						</CardSection>
+
+						<CardSection>
+							<Input
+								placeholder="your@email.com"
+								label="Email Assessment"
+								value={this.state.email}
+								onChangeText={text => this.setState({ email: text })}
 							/>
 						</CardSection>
 
