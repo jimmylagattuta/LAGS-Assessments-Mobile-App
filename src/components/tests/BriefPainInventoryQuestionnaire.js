@@ -76,8 +76,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 						// renderItem={({ item, index }) => 
 							// console.log('index and item.question ', index, item.question)}
 						renderItem={({ item, index }) => 
-							<QuestionTypeDetail item={item} index={index} />
-						}
+							<QuestionTypeDetail item={item} index={index} title={this.props.object.title} email={this.props.email} patient_object={this.props.patient_object} />						}
 						// <Text>{item.question} id:{index}</Text>}
 							// console.log('flatlist item ', item.question);
 					/>
