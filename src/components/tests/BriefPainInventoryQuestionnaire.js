@@ -27,7 +27,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 		const packageJSON = [];
 		return (
 			<ScrollView>
-				<Text style={{ margin: 5, marginLeft: 60, fontSize: 20, alignItems: 'center', justifyContent: 'center' }}>Quality of Life Questionnaire</Text>
+				<Text style={{ margin: 5, marginLeft: 60, fontSize: 20, alignItems: 'center', justifyContent: 'center' }}>Brief Pain Inventory</Text>
 				<FlatList
 					data={newList.content}
 					keyExtractor={(x, i) => i}

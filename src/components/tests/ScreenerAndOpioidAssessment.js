@@ -72,8 +72,8 @@ class ScreenerAndOpioidAssessment extends Component {
 		const packageJSON = [];
 		return (
 			<ScrollView>
-				<Text style={{ margin: 5, marginLeft: 60, fontSize: 20, alignItems: 'center', justifyContent: 'center' }}>Quality of Life Questionnaire</Text>
-				<FlatList
+					<Text style={{ margin: 5, fontSize: 20 }}>Screener and Opioid Assessment for Patients with Pain-Revised</Text>
+					<Text style={{ margin: 5, fontSize: 14 }}>The following are some questions given to patients who are on or being considered for medication for their pain. Please answer each question as honestly as possible. There are no right or wrong answers.</Text>				<FlatList
 					data={newList.content}
 					keyExtractor={(x, i) => i}
 					// renderItem={({ item, index }) => 
