@@ -115,13 +115,13 @@ class Main extends Component {
 						</CardSection>
 
 						<CardSection>
-							<Text>Temporary</Text>
+							<Text>Temporary Mailer</Text>
 						</CardSection>
 
 						<CardSection>
 							<Input
 								placeholder="your@email.com"
-								label="Email Assessment"
+								label="Email"
 								value={this.state.email}
 								onChangeText={text => this.setState({ email: text })}
 							/>
