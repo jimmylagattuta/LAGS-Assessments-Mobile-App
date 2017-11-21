@@ -14,7 +14,8 @@ class DassTwentyOne extends Component {
 		textInState: '',
 		packageToPackage: [],
 		packageForApi: [],
-		text: ''
+		text: '',
+		finishedAssessmentId: 0
 	};
 
 	componentWillMount() {
@@ -62,7 +63,8 @@ class DassTwentyOne extends Component {
 														patient: this.props.patient,
 														assessment: this.props.assessment,
 														patientObject: this.props.patient_object,
-														questionObject: item
+														questionObject: item,
+														f_a_id: this.state.f_a_id
 													};
 													console.log('packageJSON 3', packageJSON);
 													this.setState({ tempValue: newText,
@@ -73,6 +75,7 @@ class DassTwentyOne extends Component {
 														// https:lags-assessments-mobileapp-api.herokuapp.com/
 														axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 														console.log('response ', response.data.data);
+														this.setState({ f_a_id: response.data.finishedAssessmentId });
 														});
 													} 
 													console.log('packageJSON 4', packageJSON);
@@ -109,7 +112,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -121,6 +125,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -138,7 +143,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -150,6 +156,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -167,7 +174,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -179,6 +187,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -196,7 +205,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -208,6 +218,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -237,7 +248,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -249,6 +261,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -268,7 +281,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -280,6 +294,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -299,7 +314,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -311,6 +327,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -330,7 +347,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -342,6 +360,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -361,7 +380,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -373,6 +393,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -402,7 +423,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -414,6 +436,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -433,7 +456,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -445,6 +469,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -464,7 +489,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -476,6 +502,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -495,7 +522,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -507,6 +535,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -526,7 +555,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -538,6 +568,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -567,7 +598,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -579,6 +611,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -598,7 +631,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -610,6 +644,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -629,7 +664,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -641,6 +677,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -660,7 +697,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -672,6 +710,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -691,7 +730,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -703,6 +743,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -732,7 +773,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -744,6 +786,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -763,7 +806,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -775,6 +819,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -794,7 +839,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -806,6 +852,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -825,7 +872,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -837,6 +885,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -856,7 +905,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -868,6 +918,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -901,7 +952,8 @@ class DassTwentyOne extends Component {
 														answer: text, 
 														patient: this.props.patient,
 														assessment: this.props.assessment,
-														questionObject: item
+														questionObject: item,
+														f_a_id: this.state.f_a_id
 													};
 													console.log('packageJSON 3', packageJSON);
 													this.setState({ tempValue: newText,
@@ -912,6 +964,7 @@ class DassTwentyOne extends Component {
 														// https:lags-assessments-mobileapp-api.herokuapp.com/
 														axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 														console.log('response ', response.data.data);
+														this.setState({ f_a_id: response.data.finishedAssessmentId });
 														});
 													} 
 													console.log('packageJSON 4', packageJSON);
@@ -950,7 +1003,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -962,6 +1016,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -981,7 +1036,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -993,6 +1049,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1012,7 +1069,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1024,6 +1082,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1043,7 +1102,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1055,6 +1115,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1085,7 +1146,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1097,6 +1159,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1116,7 +1179,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1128,6 +1192,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1147,7 +1212,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1159,6 +1225,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1178,7 +1245,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1190,6 +1258,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1209,7 +1278,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1221,6 +1291,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1240,7 +1311,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1252,6 +1324,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1273,7 +1346,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1285,6 +1359,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1304,7 +1379,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1316,6 +1392,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1335,7 +1412,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1347,6 +1425,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1366,7 +1445,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1378,6 +1458,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1397,7 +1478,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1409,6 +1491,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1440,7 +1523,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1452,6 +1536,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1471,7 +1556,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1483,6 +1569,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1502,7 +1589,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1514,6 +1602,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1533,7 +1622,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1545,6 +1635,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1567,7 +1658,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1579,6 +1671,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1598,7 +1691,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1610,6 +1704,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1629,7 +1724,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1641,6 +1737,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1660,7 +1757,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1672,6 +1770,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1694,7 +1793,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1706,6 +1806,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1725,7 +1826,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1737,6 +1839,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1756,7 +1859,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1768,6 +1872,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1799,7 +1904,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1811,6 +1917,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1830,7 +1937,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1842,6 +1950,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1861,7 +1970,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id:this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1873,6 +1983,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1892,7 +2003,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1904,6 +2016,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1923,7 +2036,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1935,6 +2049,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1954,7 +2069,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1966,6 +2082,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -1987,7 +2104,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -1999,6 +2117,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2018,7 +2137,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2030,6 +2150,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2049,7 +2170,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2061,6 +2183,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2080,7 +2203,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2092,6 +2216,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2111,7 +2236,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionObject: item
+																questionObject: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2123,6 +2249,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2159,7 +2286,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionQuestion: item
+																questionQuestion: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2170,7 +2298,8 @@ class DassTwentyOne extends Component {
 																	!== item.question) {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
-																console.log('response ', response.data.data);
+																console.log('response PP_PP', response);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2190,7 +2319,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionQuestion: item
+																questionQuestion: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2202,6 +2332,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2221,7 +2352,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionQuestion: item
+																questionQuestion: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2233,6 +2365,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2252,7 +2385,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionQuestion: item
+																questionQuestion: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2264,6 +2398,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2283,7 +2418,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionQuestion: item
+																questionQuestion: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2295,6 +2431,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2324,7 +2461,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionQuestion: item
+																questionQuestion: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2335,7 +2473,8 @@ class DassTwentyOne extends Component {
 																	!== item.question) {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
-																console.log('response ', response.data.data);
+																console.log('response PP_PP', response);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2356,7 +2495,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionQuestion: item
+																questionQuestion: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2367,7 +2507,8 @@ class DassTwentyOne extends Component {
 																	!== item.question) {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
-																console.log('response ', response.data.data);
+																console.log('response PP_PP', response);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2388,7 +2529,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionQuestion: item
+																questionQuestion: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2399,7 +2541,8 @@ class DassTwentyOne extends Component {
 																	!== item.question) {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
-																console.log('response ', response.data.data);
+																console.log('response PP_PP', response);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2420,7 +2563,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionQuestion: item
+																questionQuestion: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2431,7 +2575,8 @@ class DassTwentyOne extends Component {
 																	!== item.question) {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
-																console.log('response ', response.data.data);
+																console.log('response PP_PP', response);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2461,7 +2606,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionQuestion: item
+																questionQuestion: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2473,6 +2619,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2493,7 +2640,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionQuestion: item
+																questionQuestion: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2505,6 +2653,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2525,7 +2674,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionQuestion: item
+																questionQuestion: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2537,6 +2687,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2557,7 +2708,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionQuestion: item
+																questionQuestion: item,
+																f_a_id: this.props.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2569,6 +2721,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2598,7 +2751,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionQuestion: item
+																questionQuestion: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2610,6 +2764,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2630,7 +2785,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionQuestion: item
+																questionQuestion: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2642,6 +2798,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2662,7 +2819,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionQuestion: item
+																questionQuestion: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2674,6 +2832,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2694,7 +2853,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionQuestion: item
+																questionQuestion: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2706,6 +2866,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2736,7 +2897,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionQuestion: item
+																questionQuestion: item,
+																f_a_id: this.state.f_a_id
 															};
 															this.setState({
 																tempValue: newText,
@@ -2748,6 +2910,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															} 
 														}
@@ -2766,7 +2929,8 @@ class DassTwentyOne extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																questionQuestion: item
+																questionQuestion: item,
+																f_a_id: this.state.f_a_id
 															};
 															console.log('newText', newText);
 															this.setState({
@@ -2778,6 +2942,7 @@ class DassTwentyOne extends Component {
 																// https:lags-assessments-mobileapp-api.herokuapp.com/
 																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
 																console.log('response ', response.data.data);
+																this.setState({ f_a_id: response.data.finishedAssessmentId });
 																});
 															}
 														}
