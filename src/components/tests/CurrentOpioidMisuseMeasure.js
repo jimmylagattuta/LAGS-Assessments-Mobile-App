@@ -64,7 +64,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 														patient: this.props.patient,
 														assessment: this.props.assessment,
 														patientObject: this.props.patient_object,
-														masterObject: this.state.toApi
+														questionObject: item
 													};
 													console.log('packageJSON 3', packageJSON);
 													this.setState({ tempValue: newText,
@@ -111,7 +111,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -140,7 +140,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -169,7 +169,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -198,7 +198,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -239,7 +239,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -270,7 +270,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -301,7 +301,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -332,7 +332,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -363,7 +363,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -404,7 +404,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -435,7 +435,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -466,7 +466,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -497,7 +497,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -528,7 +528,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -569,7 +569,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -600,7 +600,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -631,7 +631,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -662,7 +662,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -693,7 +693,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -734,7 +734,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -765,7 +765,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -796,7 +796,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -827,7 +827,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -858,7 +858,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -903,7 +903,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 														answer: text, 
 														patient: this.props.patient,
 														assessment: this.props.assessment,
-														masterObject: this.state.toApi
+														questionObject: item
 													};
 													console.log('packageJSON 3', packageJSON);
 													this.setState({ tempValue: newText,
@@ -943,7 +943,30 @@ class CurrentOpioidMisuseMeasure extends Component {
 													name={item.question}
 													label='Not at all'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Not at all', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -951,7 +974,30 @@ class CurrentOpioidMisuseMeasure extends Component {
 													name={item.question}
 													label='Several Days'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Several Days', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -959,7 +1005,30 @@ class CurrentOpioidMisuseMeasure extends Component {
 													name={item.question}
 													label='More than half the days'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'More then half the days', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -967,7 +1036,30 @@ class CurrentOpioidMisuseMeasure extends Component {
 													name={item.question}
 													label='Nearly Every Day'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Nearly Every Day', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 											</View>
@@ -986,48 +1078,186 @@ class CurrentOpioidMisuseMeasure extends Component {
 														name={item.question}
 														label='0'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Nearly Every Day', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
 														label='1'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '1', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
 														label='2'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '2', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
 														label='3'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '3', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
 														label='4'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '4', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
 														label='5'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '5', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 												</View>
 												<View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
@@ -1036,45 +1266,160 @@ class CurrentOpioidMisuseMeasure extends Component {
 														name={item.question}
 														label='6'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '6', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
 														label='7'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '7', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
 														label='8'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '8', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
 														label='9'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '9', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
 														label='10'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '10', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 												</View>
 											</View>
 									</View>
-								);
+								);					
 							case 'noReliefCompleteRelief0-100%':
 								return (
 									<View style={{ padding: 10 }}>
@@ -1086,92 +1431,349 @@ class CurrentOpioidMisuseMeasure extends Component {
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
-														label='0'
+														label='0%'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '0%', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
-														label='1'
+														label='10%'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '10%', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
-														label='2'
+														label='20%'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '20%', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
-														label='3'
+														label='30%'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
-													/>
-													<CheckBox
-														style={{ height: 4, width: 4 }}
-														name={item.question}
-														label='4'
-														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
-													/>
-													<CheckBox
-														style={{ height: 4, width: 4 }}
-														name={item.question}
-														label='5'
-														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '30%', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 												</View>
+												
 												<View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
-														label='6'
+														label='40%'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '40%', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
-														label='7'
+														label='50%'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '50%', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
-														label='8'
+														label='60%'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '60%', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
-														label='9'
+														label='70%'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '70%', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
+													/>
+												</View>
+
+												<View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+													<CheckBox
+														style={{ height: 4, width: 4 }}
+														name={item.question}
+														label='80%'
+														onChange={(checked) => {
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '80%', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
-														label='10'
+														label='90%'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '90%', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
+													/>
+													<CheckBox
+														style={{ height: 4, width: 4 }}
+														name={item.question}
+														label='100%'
+														onChange={(checked) => {
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '100%', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 												</View>
 											</View>
@@ -1190,48 +1792,186 @@ class CurrentOpioidMisuseMeasure extends Component {
 														name={item.question}
 														label='0'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '0', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
 														label='1'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '1', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
 														label='2'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '2', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
 														label='3'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '3', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
 														label='4'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '4', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
 														label='5'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '5', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 												</View>
 												<View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
@@ -1240,40 +1980,155 @@ class CurrentOpioidMisuseMeasure extends Component {
 														name={item.question}
 														label='6'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '6', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
 														label='7'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '7', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
 														label='8'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '8', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
 														label='9'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '9', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 													<CheckBox
 														style={{ height: 4, width: 4 }}
 														name={item.question}
 														label='10'
 														onChange={(checked) => {
-															console.log('I am checked yes', checked);
-														}}
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: '10', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionObject: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
+													}}
 													/>
 												</View>
 											</View>
@@ -1282,7 +2137,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 							case 'animatedPerson':
 								return (
 									<View style={{ padding: 10 }}>
-										<Text>Interactive person under research..</Text>
+										<Text>5) Interactive person under research..</Text>
 									</View>
 								);	
 							case 'neverToVeryOften1-5':
@@ -1306,7 +2161,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionQuestion: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1337,7 +2192,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionQuestion: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1368,7 +2223,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionQuestion: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1399,7 +2254,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionQuestion: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1430,7 +2285,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionQuestion: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1462,7 +2317,30 @@ class CurrentOpioidMisuseMeasure extends Component {
 													name={item.question}
 													label='Did not apply to me at all'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Did not apply to me at all a', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -1471,7 +2349,30 @@ class CurrentOpioidMisuseMeasure extends Component {
 													label='Applied to me to some
 														degree, or some of the time'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Applied to me to some degree, or some of the time a', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -1480,7 +2381,30 @@ class CurrentOpioidMisuseMeasure extends Component {
 													label='Applied to me to a
 														considerable degree or a good part of time'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Applied to me to a considerable degree or a good part of the time a', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -1489,12 +2413,35 @@ class CurrentOpioidMisuseMeasure extends Component {
 													label='Applied to me very much
 														or most of the time'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Applied to me very much or most of the time a', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 											</View>
 									</View>
-								);
+								);							
 							case 'd':
 								return (
 									<View style={{ padding: 10 }}>
@@ -1507,7 +2454,30 @@ class CurrentOpioidMisuseMeasure extends Component {
 													name={item.question}
 													label='Did not apply to me at all'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Did not apply to me at all d', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -1516,7 +2486,30 @@ class CurrentOpioidMisuseMeasure extends Component {
 													label='Applied to me to some
 														degree, or some of the time'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Applied to me to some degree, or some of the time d', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -1525,7 +2518,30 @@ class CurrentOpioidMisuseMeasure extends Component {
 													label='Applied to me to a
 														considerable degree or a good part of time'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Applied to me a considerable degree or a good part of the time d', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -1534,12 +2550,35 @@ class CurrentOpioidMisuseMeasure extends Component {
 													label='Applied to me very much
 														or most of the time'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Applied to me very much or most of the time d', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 											</View>
 									</View>
-								);
+								);							
 							case 's':
 								return (
 									<View style={{ padding: 10 }}>
@@ -1552,7 +2591,30 @@ class CurrentOpioidMisuseMeasure extends Component {
 													name={item.question}
 													label='Did not apply to me at all'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Did not apply to me at all s', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -1561,7 +2623,30 @@ class CurrentOpioidMisuseMeasure extends Component {
 													label='Applied to me to some 
 														degree, or some of the time'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Applied to me to some degree, or some of the time s', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -1570,7 +2655,30 @@ class CurrentOpioidMisuseMeasure extends Component {
 													label='Applied to me to a considerable
 														degree or a good part of time'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Applied to me to a considerable degree or a good part of time s', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -1579,7 +2687,30 @@ class CurrentOpioidMisuseMeasure extends Component {
 													label='Applied to me very much or 
 														most of the time'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Applied to me very much or most of the time', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 											</View>
@@ -1607,7 +2738,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionQuestion: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1637,7 +2768,7 @@ class CurrentOpioidMisuseMeasure extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionQuestion: item
 															};
 															console.log('newText', newText);
 															this.setState({

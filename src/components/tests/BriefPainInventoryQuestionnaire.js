@@ -62,7 +62,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 														patient: this.props.patient,
 														assessment: this.props.assessment,
 														patientObject: this.props.patient_object,
-														masterObject: this.state.toApi
+														questionObject: item
 													};
 													console.log('packageJSON 3', packageJSON);
 													this.setState({ tempValue: newText,
@@ -109,7 +109,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -138,7 +138,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -167,7 +167,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -196,7 +196,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -237,7 +237,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -268,7 +268,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -299,7 +299,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -330,7 +330,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -361,7 +361,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -402,7 +402,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -433,7 +433,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -464,7 +464,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -495,7 +495,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -526,7 +526,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -567,7 +567,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -598,7 +598,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -629,7 +629,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -660,7 +660,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -691,7 +691,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -732,7 +732,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -763,7 +763,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -794,7 +794,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -825,7 +825,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -856,7 +856,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -877,7 +877,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 									</View>
 								);
 							case 'checkboxgroup':
-								return (	
+								return (
 									<View style={{ padding: 10 }}>
 										<View style={{ padding: 10 }}>
 											<Text style={{ padding: 10, fontSize: 22 }}>
@@ -901,8 +901,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 														answer: text, 
 														patient: this.props.patient,
 														assessment: this.props.assessment,
-														patientObject: this.props.patient_object,
-														masterObject: this.state.toApi
+														questionObject: item
 													};
 													console.log('packageJSON 3', packageJSON);
 													this.setState({ tempValue: newText,
@@ -951,7 +950,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -982,7 +981,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1009,11 +1008,11 @@ class BriefPainInventoryQuestionnaire extends Component {
 															const q = item.question;
 															const newText = {
 																question: q,
-																answer: 'More than half the days', 
+																answer: 'More then half the days', 
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1044,7 +1043,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1082,11 +1081,11 @@ class BriefPainInventoryQuestionnaire extends Component {
 															const q = item.question;
 															const newText = {
 																question: q,
-																answer: '0', 
+																answer: 'Nearly Every Day', 
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1117,7 +1116,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1148,7 +1147,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1179,7 +1178,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1210,7 +1209,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1241,7 +1240,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1274,7 +1273,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1305,7 +1304,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1336,7 +1335,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1367,7 +1366,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1398,7 +1397,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1418,7 +1417,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 												</View>
 											</View>
 									</View>
-								);
+								);					
 							case 'noReliefCompleteRelief0-100%':
 								return (
 									<View style={{ padding: 10 }}>
@@ -1441,7 +1440,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1472,7 +1471,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1503,7 +1502,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1534,7 +1533,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1568,7 +1567,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1599,7 +1598,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1630,7 +1629,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1661,7 +1660,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1695,7 +1694,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1726,7 +1725,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1757,7 +1756,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1800,7 +1799,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1831,7 +1830,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1862,7 +1861,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1893,7 +1892,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1924,7 +1923,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1955,7 +1954,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -1988,7 +1987,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -2019,7 +2018,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -2050,7 +2049,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -2081,7 +2080,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -2112,7 +2111,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionObject: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -2136,7 +2135,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 							case 'animatedPerson':
 								return (
 									<View style={{ padding: 10 }}>
-										<Text>Interactive person under research..</Text>
+										<Text>5) Interactive person under research..</Text>
 									</View>
 								);	
 							case 'neverToVeryOften1-5':
@@ -2160,7 +2159,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionQuestion: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -2191,7 +2190,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionQuestion: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -2222,7 +2221,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionQuestion: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -2253,7 +2252,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionQuestion: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -2284,7 +2283,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionQuestion: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -2316,7 +2315,30 @@ class BriefPainInventoryQuestionnaire extends Component {
 													name={item.question}
 													label='Did not apply to me at all'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Did not apply to me at all a', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -2325,7 +2347,30 @@ class BriefPainInventoryQuestionnaire extends Component {
 													label='Applied to me to some
 														degree, or some of the time'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Applied to me to some degree, or some of the time a', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -2334,7 +2379,30 @@ class BriefPainInventoryQuestionnaire extends Component {
 													label='Applied to me to a
 														considerable degree or a good part of time'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Applied to me to a considerable degree or a good part of the time a', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -2343,12 +2411,35 @@ class BriefPainInventoryQuestionnaire extends Component {
 													label='Applied to me very much
 														or most of the time'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Applied to me very much or most of the time a', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 											</View>
 									</View>
-								);
+								);							
 							case 'd':
 								return (
 									<View style={{ padding: 10 }}>
@@ -2361,7 +2452,30 @@ class BriefPainInventoryQuestionnaire extends Component {
 													name={item.question}
 													label='Did not apply to me at all'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Did not apply to me at all d', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -2370,7 +2484,30 @@ class BriefPainInventoryQuestionnaire extends Component {
 													label='Applied to me to some
 														degree, or some of the time'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Applied to me to some degree, or some of the time d', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -2379,7 +2516,30 @@ class BriefPainInventoryQuestionnaire extends Component {
 													label='Applied to me to a
 														considerable degree or a good part of time'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Applied to me a considerable degree or a good part of the time d', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -2388,12 +2548,35 @@ class BriefPainInventoryQuestionnaire extends Component {
 													label='Applied to me very much
 														or most of the time'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Applied to me very much or most of the time d', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 											</View>
 									</View>
-								);
+								);							
 							case 's':
 								return (
 									<View style={{ padding: 10 }}>
@@ -2406,7 +2589,30 @@ class BriefPainInventoryQuestionnaire extends Component {
 													name={item.question}
 													label='Did not apply to me at all'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Did not apply to me at all s', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -2415,7 +2621,30 @@ class BriefPainInventoryQuestionnaire extends Component {
 													label='Applied to me to some 
 														degree, or some of the time'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Applied to me to some degree, or some of the time s', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -2424,7 +2653,30 @@ class BriefPainInventoryQuestionnaire extends Component {
 													label='Applied to me to a considerable
 														degree or a good part of time'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Applied to me to a considerable degree or a good part of time s', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -2433,7 +2685,30 @@ class BriefPainInventoryQuestionnaire extends Component {
 													label='Applied to me very much or 
 														most of the time'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Applied to me very much or most of the time', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																questionQuestion: item
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 											</View>
@@ -2461,7 +2736,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionQuestion: item
 															};
 															this.setState({
 																tempValue: newText,
@@ -2491,7 +2766,7 @@ class BriefPainInventoryQuestionnaire extends Component {
 																patient: this.props.patient,
 																assessment: this.props.assessment,
 																patientObject: this.props.patient_object,
-																masterObject: this.state.toApi
+																questionQuestion: item
 															};
 															console.log('newText', newText);
 															this.setState({
