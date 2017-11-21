@@ -1309,7 +1309,30 @@ class QualityOfLife extends Component {
 													name={item.question}
 													label='Never'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Never', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																masterObject: this.state.toApi
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -1317,7 +1340,30 @@ class QualityOfLife extends Component {
 													name={item.question}
 													label='Seldom'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Seldom', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																masterObject: this.state.toApi
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -1325,7 +1371,30 @@ class QualityOfLife extends Component {
 													name={item.question}
 													label='Sometimes'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Sometimes', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																masterObject: this.state.toApi
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -1333,7 +1402,30 @@ class QualityOfLife extends Component {
 													name={item.question}
 													label='Often'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Often', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																masterObject: this.state.toApi
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 												<CheckBox
@@ -1341,7 +1433,30 @@ class QualityOfLife extends Component {
 													name={item.question}
 													label='Very Often'
 													onChange={(checked) => {
-														console.log('I am checked yes', checked);
+														if (checked) {
+															console.log('checked', checked);
+															const q = item.question;
+															const newText = {
+																question: q,
+																answer: 'Very Often', 
+																patient: this.props.patient,
+																assessment: this.props.assessment,
+																patientObject: this.props.patient_object,
+																masterObject: this.state.toApi
+															};
+															this.setState({
+																tempValue: newText,
+																compareQuestion: item.question 
+															});
+															console.log('newText', newText);
+															if (this.state.compareQuestion && this.state.compareQuestion
+																	!== item.question) {
+																// https:lags-assessments-mobileapp-api.herokuapp.com/
+																axios.post('https:lags-assessments-mobileapp-api.herokuapp.com/api/v1/lagz_forms/assessments/answers', this.state.tempValue).then((response) => {
+																console.log('response ', response.data.data);
+																});
+															} 
+														}
 													}}
 												/>
 											</View>
